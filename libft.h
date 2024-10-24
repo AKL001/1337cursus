@@ -15,5 +15,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 size_t	ft_strlen(const char *s);
 void	*ft_memset(void *s, int c, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t len);
-
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 #endif
