@@ -2,11 +2,6 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	// len of the substr
-	// s[start]
-	// [ a , b , c , d , f , g ,h ,r ,t]
-	//   1   2   3   4   5   6  7  8  9
-	// s_len = 9;  start  = 3; len = 9;
 	// s_len < start + len
 	// len > max_string_len
 	char *ptr;
