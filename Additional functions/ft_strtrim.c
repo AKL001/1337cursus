@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ablabib <ablabib@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/27 15:52:18 by ablabib           #+#    #+#             */
+/*   Updated: 2024/10/27 16:14:30 by ablabib          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
@@ -17,7 +29,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = s1_len;
 	while (end > start && ft_strchr(set, s1[end - 1]))
 		end--;
-	len = end - start; // len
+	len = end - start;
 	ptr = ft_substr(s1, start, len);
 	if (!ptr)
 		return (NULL);
